@@ -4,12 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <title>Document</title>
+    <title>Federico Keller</title>
 </head>
 <body>
-    <header>
-        Hola
-    </header>
+        <div class="navigation">
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#about-me">
+                            Sobre mí
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#experience">
+                            Experiencia
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#abilities">
+                            Habilidades
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#projects">
+                            Proyectos
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#contact">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    
+        <header class="header">
+            <div class="right">
+                <h3 class="heading-secondary">
+                    <em>
+                        Desarrollador Angular
+                    </em>
+                </h3>
+                <h1 class="heading-primary">
+                   Hola, soy Federico Keller
+                </h1>
+                <p>
+                    Actualmente estudiando la carrera "<u>Licenciatura en Gestión en Tecnologías de la Información</u>" en la UADE, y
+                    con 2 años de experiencia en el mundo del desarrollo web,  me adentro en las necesidades y los deseos 
+                    de los clientes para traer el mejor resultado posible.
+                </p>
+            </div>
+            <div class="left">
+                <img src="./assets/img/FedericoKeller.jfif" alt="Federico Christian Keller">
+            </div>
+        </header>
+    
+        <section id="about-me" class="about-me">
+            <h2 class="about-me--title">
+                Sobre mí
+            </h2>
+            
+            <p class="about-me--content">
+                Desde que tengo memoria siempre tuve un fervor por aprender nuevas cosas, y como tal como dice Thomás Huxley,
+                <blockquote>Intenta aprender algo sobre todo y todo sobre algo.</blockquote> Sin embargo, el año 2014 marcó un
+                antes y un después en mi tanto en mi vida personal como en mi futuro profesional, en donde encontré mi verdadera pasión. Ese año ingrese a la Escuela Técnica N°36: "Alte. Guillermo Brown",
+                en donde se me formó en el arte de la programación y en lo que se requiere para entrar al mundo laboral. Así, en los 
+                últimos 2 años, participé en los procesos productivos de distintas empresas.
+            </p>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2 class="experience--title">
+                
+            </h2>
+
+            <table>
+                <tr>
+                    <th>Empresa</th>
+                    <th>Tareas</th>
+                    <th>Tiempo</th>
+                </tr>
+                <tr>
+                    <td>Dinator</td>
+                    <td>Acá empezó mi camino, en donde aprendí sobre <em>Angular</em> y se me formó sobre la importancia de la metrología en nuestro día a día.</td>
+                    <td>1 año</td>
+                </tr>
+                <tr>
+                    <td>
+                        COTO CICSA
+                    </td>
+                    <td>
+                        Luego llegué a COTO CICSA, en donde desarrollé cosas mas complejas y aprendí a desenvolverme en un grupo más numeroso. 
+                    </td>
+                    <td>
+                        8 meses
+                    </td>
+                </tr>
+                <tr>
+                    <td>AtomChat</td>
+                    <td>
+                        Finalmente, este año empecé en AtomChat, en donde tengo más autonomía y se me concedieron más libertades, así como también, más responsabilidades.   
+                    </td>
+                    <td>4 meses</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="abilities" class="abilities">
+            <h2>Habilidades</h2>
+                    <ol>
+                        <li><strong>Angular</strong>: Con una proficiencia media, me tocó resolver muchos problemas utilizando este framework.</li>
+                        <li><strong>Node.js</strong>: Con un poco menos de experiencia, es mi herramienta de preferencia para trabajar soluciones en el BackEnd.</li>
+                    </ol>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="projects__title">Proyectos</h2>
+            <p>En mi tiempo libre me gusta desarrollar y refinar mis hablilidades, entré los que podemos encontrar:</p>
+            <figure>
+                <a href="https://time-tracking-xi.vercel.app/login" target="_blank">
+                    <img src="./assets/img/proyecto1.PNG" alt="DashSmart">
+                </a>
+                <figcaption>DashSmart</figcaption>
+            </figure>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <div class="container">
+                <form class="form" action="POST">
+              
+                  <div class="form__control">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name">
+                  </div>
+              
+                  <div class="form__control">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message"></textarea>
+                  </div>
+              
+                  <button type="submit" class="btn btn--submit">Enviar</button>
+              
+                </form>
+              </div>
+        </section>
+        <br>
+        <footer class="footer">
+            <h4>Redes sociales</h4>
+            <div class="btn btn--rounded">
+                <a class="btn btn--social" href="https://ar.linkedin.com/in/federico-keller" target="_blank">
+                    LinkedIn
+                </a>
+            </div>
+
+            <div class="btn btn--rounded">
+                <a class="btn btn--social" href="https://twitter.com/mrfedek" target="_blank">
+                    Twitter
+                </a>
+            </div>
+        </footer>
 </body>
 </html>

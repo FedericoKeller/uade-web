@@ -4,59 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Federico Keller</title>
 </head>
 <body>
-        <div class="navigation">
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#about-me">
-                            Sobre mí
-                        </a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#experience">
-                            Experiencia
-                        </a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#abilities">
-                            Habilidades
-                        </a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#projects">
-                            Proyectos
-                        </a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#contact">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    
         <header class="header">
-            <div class="right">
+            <div class="navigation">
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item--logo"> 
+                            Federico&lt;/&gt;Keller
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#about-me">
+                                Sobre mí
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#experience">
+                                Experiencia
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#abilities">
+                                Habilidades
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#projects">
+                                Proyectos
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#contact">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__block header__block--right">
                 <h3 class="heading-secondary">
                     <em>
-                        Desarrollador Angular
+                        Desarrollador Frontend
                     </em>
                 </h3>
                 <h1 class="heading-primary">
-                   Hola, soy Federico Keller
+                   Creando experiencias web para el deleite de mis clientes.
                 </h1>
-                <p>
-                    Actualmente estudiando la carrera "<u>Licenciatura en Gestión en Tecnologías de la Información</u>" en la UADE, y
-                    con 2 años de experiencia en el mundo del desarrollo web,  me adentro en las necesidades y los deseos 
-                    de los clientes para traer el mejor resultado posible.
-                </p>
+              <a class="btn btn--navigation" href="#about-me">Sobre mí &rarr;</a>  
             </div>
-            <div class="left">
-                <img src="./assets/img/FedericoKeller.jfif" alt="Federico Christian Keller">
+            <div class="header__block header__block--left">
+                <img class="img img--programmer" src="./assets/img/programmer.svg" alt="Federico Christian Keller">
             </div>
         </header>
     
@@ -122,27 +122,42 @@
         <section id="projects" class="projects">
             <h2 class="projects__title">Proyectos</h2>
             <p>En mi tiempo libre me gusta desarrollar y refinar mis hablilidades, entré los que podemos encontrar:</p>
-            <figure>
+            <figure class="project">
                 <a href="https://time-tracking-xi.vercel.app/login" target="_blank">
-                    <img src="./assets/img/proyecto1.PNG" alt="DashSmart">
+                    <img class="img img--project" src="./assets/img/proyecto1.PNG" alt="DashSmart">
                 </a>
-                <figcaption>DashSmart</figcaption>
+                <figcaption>Proyecto creado para descubir los desafíos, así como los pros y los contras, de crear un sistema de autenticación propio.</figcaption>
+            </figure>
+
+            <figure class="project">
+                <a href="https://faq-accordion-css-only.vercel.app/" target="_blank">
+                    <img class="img img--project" src="./assets/img/proyecto2.PNG" alt="DashSmart">
+                </a>
+                <figcaption>Proyecto creado para refinar mis habilidades con CSS</figcaption>
             </figure>
         </section>
 
         <section id="contact" class="contact">
-            <h2>Contacto</h2>
-            <div class="container">
-                <form class="form" action="POST">
-              
+            <div class="contact__form">
+                <form class="form" action="#">
+                    <div class="contact__heading">
+                        <h2 class="contact__header">
+                            Contacto
+                        </h2>
+                    </div>
                   <div class="form__control">
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name">
+                    <input class="form__input" type="text" placeholder="Nombre" id="name" name="name">
+                    <label class="form__label" for="name">Nombre</label>
+                  </div>
+
+                  <div class="form__control">
+                    <input class="form__input" type="text" placeholder="E-mail" id="email" email="email">
+                    <label class="form__label" for="email">E-mail</label>
                   </div>
               
                   <div class="form__control">
-                    <label for="message">Mensaje</label>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea class="form__input" id="message" placeholder="Mensaje" name="message"></textarea>
+                    <label class="form__label" for="message">Mensaje</label>
                   </div>
               
                   <button type="submit" class="btn btn--submit">Enviar</button>
